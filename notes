@@ -1,8 +1,8 @@
-random root RCE on japan stuff by 
+random root RCE on japan stuff
 
 shodan title:MG-A300
 
-default cred admin:admin
+default basic auth cred admin:admin
 
 
 POST /cgi-bin/self_check.php HTTP/1.1
